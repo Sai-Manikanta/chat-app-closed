@@ -4,6 +4,9 @@ import Header from '../components/home/Header';
 // import ChatSend from '../components/home/ChatSend'
 
 function Home() {
+
+    window.alert('Sorry, nenu neeku dooram avvadame kavali ante chepthe chalu ra, cheppadaniki kuda alochinchala, sorry enni days disturb chesinandhuku.');
+
     return (
         <motion.div 
             initial={{ opacity: 0 }}
@@ -11,7 +14,7 @@ function Home() {
             className="h-screen flex flex-col max-w-lg mx-auto bg-gray-900"
             style={{ color: 'rgb(69, 156, 173)' }}
         >
-            <Header />
+            {/* <Header /> */}
             <div className="p-5 h-full">
                 {/* <h1 className="text-2xl uppercase font-bold tracking-wide">Page closed</h1> */}
                 <p className="my-4 text-lg">Component rights belongs to contributor</p>
