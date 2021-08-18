@@ -31,7 +31,7 @@ function Header() {
             {!typing.typing && (
                 <div className="font-bold">Welcome bey</div>
             )}
-            <button onClick={() => history.push('/feachers/menu')}>
+            <button onClick={() => history.push('/feachers/status/yours')}>
                 <CgMenuRightAlt size="2em" className={`${name === 'Mani' ? 'text-blue-600' : 'text-pink-500'} dark:text-white`} />
             </button>
         </div>

@@ -8,7 +8,7 @@ import { CgSpinnerTwo } from 'react-icons/cg';
 import { AuthContext } from '../../contexts/AuthContext';
 import { UploadContext } from '../../contexts/UploadContext';
 import firebase from '../../utils/firebase';
-
+//
 function ChatSend() {
     const { name } = useContext(AuthContext);
     const { uploadStatus } = useContext(UploadContext);

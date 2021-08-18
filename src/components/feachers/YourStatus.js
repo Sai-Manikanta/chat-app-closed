@@ -72,7 +72,7 @@ function YourStatus() {
 
     return (
         <>
-           {uploadStatus && <p>Uploading...</p>}
+           {uploadStatus && <p>Uploading wait...</p>}
            {!uploadStatus && (
                <IKContext 
                     publicKey="public_6Z7p3M/rOoplkEAkbXolSXM41IA=" 
@@ -87,6 +87,7 @@ function YourStatus() {
                     />
                 </IKContext> 
            )}
+
            <div className="mt-4">
                <div className="flex justify-between space-x-2">
                    {statuses.filter(s => s.name === name).map((status, index) => (

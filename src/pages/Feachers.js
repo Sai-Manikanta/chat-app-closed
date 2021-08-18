@@ -30,13 +30,13 @@ function Feachers() {
                 </div>
 
                 <div className="flex justify-between space-x-2 mt-3">
-                  <NavLink 
+                  {/* <NavLink 
                     to={`${url}/menu`} 
                     className="bg-white flex-grow text-center py-1.5 rounded text-sm border-b-4" 
                     activeClassName="border-b-4 border-indigo-300 text-indigo-500"
                   >
                       Menu
-                  </NavLink>
+                  </NavLink> */}
                   <NavLink 
                     to={`${url}/status/yours`} 
                     className="bg-white flex-grow text-center py-1.5 rounded text-sm border-b-4" 
@@ -48,9 +48,9 @@ function Feachers() {
 
             <div className="p-4 rounded-sm">
                 <Switch>
-                    <Route path={`${path}/menu`}>
+                    {/* <Route path={`${path}/menu`}>
                         <Menu />
-                    </Route>
+                    </Route> */}
                     <Route path={`${path}/status`}>
                         <Status />
                     </Route>
