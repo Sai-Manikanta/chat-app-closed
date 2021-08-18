@@ -1,39 +1,39 @@
-import { useContext } from 'react';
+//import { useContext } from 'react';
 //import { motion } from 'framer-motion'
-import axios from 'axios'
+//import axios from 'axios'
 // import { MdNotificationsActive, MdDeleteSweep } from 'react-icons/md'
 // import { FiSun } from 'react-icons/fi'
 // import { FaRegMoon } from 'react-icons/fa'
-import { ToastContainer, toast } from 'react-toastify';
-import firebase from '../../utils/firebase';
-import { ThemeContext } from '../../contexts/ThemeContext'
+import { ToastContainer } from 'react-toastify'; // toast
+//import firebase from '../../utils/firebase';
+//import { ThemeContext } from '../../contexts/ThemeContext'
 import 'react-toastify/dist/ReactToastify.css';
 //import LinkBox from './LinkBox';
 
 function Menu() {
    //const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext);
 
-   const smsSuccess = () => toast.success("Success...");
-   const smsFailed = () => toast.error("Failed...");
+   // const smsSuccess = () => toast.success("Success...");
+   // const smsFailed = () => toast.error("Failed...");
 
-   const deleteSuccess = () => toast.success("Successfully Cleared");
-   const deleteFailed = () => toast.error("Failed...");
-   const sendSms = () => {
-      axios.get('https://shielded-sea-23165.herokuapp.com/api/v1/notify')
-         .then(res => {
-            smsSuccess()
-         })
-         .catch(err => {
-            smsFailed()
-         })
-   }
+   // const deleteSuccess = () => toast.success("Successfully Cleared");
+   // const deleteFailed = () => toast.error("Failed...");
+   // const sendSms = () => {
+   //    axios.get('https://shielded-sea-23165.herokuapp.com/api/v1/notify')
+   //       .then(res => {
+   //          smsSuccess()
+   //       })
+   //       .catch(err => {
+   //          smsFailed()
+   //       })
+   // }
 
-   const deleteChat = () => {
-      const chatRef = firebase.database().ref('Chats');
-      chatRef.remove()
-         .then(() => deleteSuccess())
-         .catch(() => deleteFailed())
-   }
+   // const deleteChat = () => {
+   //    const chatRef = firebase.database().ref('Chats');
+   //    chatRef.remove()
+   //       .then(() => deleteSuccess())
+   //       .catch(() => deleteFailed())
+   // }
 
    return (
       <div>
