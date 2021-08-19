@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 function Home() {
 
-    window.alert('Sorry, nenu neeku dooram avvadame kavali ante chepthe chalu ra, cheppadaniki kuda alochinchala, sorry enni days disturb chesinandhuku.');
+    //window.alert('Sorry, nenu neeku dooram avvadame kavali ante chepthe chalu ra, cheppadaniki kuda alochinchala, sorry enni days disturb chesinandhuku.');
 
     return (
         <motion.div 
