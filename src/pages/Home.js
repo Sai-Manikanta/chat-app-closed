@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-//import Header from '../components/home/Header';
+import Header from '../components/home/Header';
 // import ChatBox from '../components/home/ChatBox';
 // import ChatSend from '../components/home/ChatSend'
 
